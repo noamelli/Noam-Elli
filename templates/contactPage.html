@@ -11,8 +11,8 @@
         <h1 style="text-align: center; margin-top: 20px;" >Contact Us</h1>
     </header>
     <main style="height: 80%;padding:2% ; border-top:8px solid rgb(64, 63, 64); margin:3px;">
-        <p style="text-align: center;"> If you are having any technical problems with our web - please attach a print screen </p>
-        <form style="border:  3px solid rgb(64, 63, 64); width: 40%; height: 90%; margin:10px auto;" action="formOutPut.html"method="get">
+        <p style="padding:1% ; margin:1px; text-align: center;"> If you are having any technical problems with our web - please attach a print screen </p>
+        <form style="border:  2px solid rgb(64, 63, 64); width: 40%; height: 90%; margin:10px auto;" action="formOutPut.html"method="get">
             <div style="text-align: center;">
                 <label for="fname" >First Name:*</label><br>
                 <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,15}" required placeholder="Enter first name"><br><br>
@@ -21,7 +21,7 @@
                 <label for="email">Email Address:*</label><br>
                 <input type="email" id="email" name="email" required placeholder="Enter email address"><br><br>
                 <label for="telephone">Phone Number:*</label><br>
-                <input type="tel" id="telephone" name="telephone" pattern ="[0]{1}[5]{1}[0-9]{8}" required placeholder="Enter phone number " ><br><br>
+                <input type="tel" id="telephone" name="telephone" pattern ="[0]{1}[5]{1}[0-9]{8}" required placeholder="Enter phone number" ><br><br>
                 <label for="description">Description:</label><br>
                 <input type="text" id="description"name="description" style="height: 30px; "maxlength="150"><br><br> 
                 <label for="bug" style="margin-left: 40px;">technical problems</label>
@@ -29,6 +29,7 @@
                 <label for="addedFile" style="margin-left: 120px;"> Attach File</label>
                 <input type="file" id="addedFile"name="addedFile"><br><br>
                 <input type="submit" value="Submit">
+                <progress value ="20"max ="100"></progress>
     </form> 
     </main>
     <footer style="height: 5%; padding:1% ; border-top:  2px solid rgb(64, 63, 64); margin:2px;">
