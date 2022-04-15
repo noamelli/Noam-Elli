@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
-<body style="height: 90%;background-color: rgb(203, 203, 203);">
-    <header style="padding:1% ; border-top:  10px solid rgb(64, 63, 64); margin:1px; height:15% ;">
-        <i>
-            <center>
-                <h1 > Welcome to you new cooking experience</h1> 
-            </center>
-        </i>
+<body>
+    <header style="height:15%; padding:1px; border-bottom: 20px solid rgb(55, 78, 100); margin:1px;">
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding:1px ;margin-top:30px;color: rgb(27, 37, 37);" >Welcome To Your New Cooking Experience</h1><!--didnt add border-looks better without it-->
     </header>
-    <center>
-        <main style=" margin:1px; height: 75%;">
-        <i>
-            <h2 style="padding:1% ; border-top:10px solid rgb(64, 63, 64); margin:1px";>You can find here recipes of all kind of food</h2>  
-        </i>
-        <i>
-            <p style="padding:1% ; margin:1px;"> which were written by the greatest chefs from all over the world</p> <!-- didnt add border beacuse it looks better without it  -->
-        </i>
-       <img style="width: 17%;height: 17%; padding: 0.5% ;margin: top 5px; ;" src="../static/recipesLogo.jpg" alt="food logo">
-        <nav style="margin-top: 5px;">
-            <i><b>
-                    <p style="padding:1%; margin-top: 8px;">You can choose the category you want</p><!-- didnt add border beacuse it looks better without it  -->
-            </b></i>
-            <ul class="recipes pages">
-                <i style="padding:1%; margin-top: 1px;"><a href="regularRecipesPage.html">Regular</a></li></i><br><!-- didnt add border beacuse it looks better without it  -->
-                <i style="padding:1%; margin-top: 1px;"><a href="vegetarianRecipesPage.html">Vegetarian</a></li></i><!-- didnt add border beacuse it looks better without it  -->
-            </ul>
-        </nav>
+    <main style="height: 80%;padding:2%; margin:3px; background-color:rgb(11, 38, 66);"><!--didnt add border-looks better without it-->
+        <h2 style="padding:1%; text-align: center ;margin-top: 1px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(247, 247, 247);"> We provide you recipes of all kind of food </h2><!-- didnt add border-looks better without it  -->
+      <center><img style=" padding: 0.5% ;margin: top 5px;"  src="../static/recipesLogo.jpg" alt="food logo"></center> <!--didnt add border-looks better without it-->
+        <nav style="padding:1px; margin: 30px; color: azure;text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> <!--didnt add border-looks better without it-->
+                <b><p style="padding:1px;margin:3px">You can choose the category you want</p></b><!--didnt add border-looks better without it-->
+                <div style="display: flex; justify-content: center;"><!--didnt add border to each image-looks better without it-->
+                    <div style="display:inline">
+                        <a href="../templates/italianRecipesPage.html"><img src="../static/pizzaImage.jpg" alt="Italian page link" style="width:70px;height:70px;padding:3px;margin: 3px;"></a>
+                        <span style="display:block;">Italian</span>
+                    </div>
+                    <div style="display:inline">
+                        <a href="../templates/meetRecipesPage.html"><img src="../static/meetImage.jpg" alt="meet page link" style="width:70px;height:70px;padding:3px;margin: 3px;"></a>
+                        <span style="display:block;">Meet</span>
+                    </div>
+                    <div style="display:inline">
+                        <a href="../templates/vegetarianRecipesPage.html"><img src="../static/vegetarianFoodImage.jpg" alt="vegetarian page link" style="width:70px;height:70px;padding:3px;margin: 3px;"></a>
+                        <span style="display:block;">Vegetarian</span>
+                    </div>
+                    <div style="display:inline">
+                        <a href="../templates/dessertRecipesPage.html"><img src="../static/dessertImage.jpg" alt="dessert page link" style="width:70px;height:70px;padding:3px;margin: 3px;"></a>
+                        <span style="display:block;">Dessert</span>
+                    </div>
+                    <div style="display:inline">
+                        <a href="../templates/breakfastRecipesPage.html"><img src="../static/breakfastImage.jpg" alt="breakfast page link" style="width:70px;height:70px;padding:3px;margin: 3px;"></a>
+                        <span style="display:block;">Breakfast</span>
+                    </div>
+                </div>
+            </nav>
         </main>
-    </center> 
-    <footer style="padding:1% ; border-top:  10px solid rgb(64, 63, 64); margin:1px; height:15% ;">
-        <div style="margin-top: 8px;">
-            <a href="contactPage.html">Contact Us</a><br><br>
-            <a href="PrivacyPolicy.html">Privacy Policy</a><br><br>
-            <a href="https://he-il.facebook.com/">Our facebook page</a><br><br>
-            <a href="https://www.instagram.com/">Our instagram page</a>
-        </div>
-    </footer>
+        <footer style="height: 5%; padding:1% ; border-top: 20px solid rgb(55, 78, 100); margin:2px;">
+            <div style=" font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <b><a style="color:black;" href="contactPage.html">Contact us</a><br><br></b>
+                    <b><a style="color: black;" href="PrivacyPolicy.html">Privacy policy</a><br><br></b>
+                    <b><a style="color: black;" href="https://he-il.facebook.com/">Our facebook page</a><br><br></b>
+                    <b><a  style="color:black;" href="https://www.instagram.com/">Our instagram page</a></b>
+            </div>
+        </footer>
+    
 </body>
 </html>
-

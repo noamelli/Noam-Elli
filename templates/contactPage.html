@@ -6,38 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color:rgb(203, 203, 203);height: 90%;" >
-    <header style="padding:1% ; border-top:  8px solid rgb(64, 63, 64); margin:9px; height:15% ;">
-        <h1 style="text-align: center; margin-top: 20px;" >Contact Us</h1>
+<body >
+    <header style="height:15% ;padding:1px; border-bottom: 20px solid rgb(55, 78, 100); margin: 1px;">
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center ;margin-top:30px;color: rgb(27, 37, 37);" >Let Us Help You</h1><!--didnt add border-looks better without it-->
     </header>
-    <main style="height: 80%;padding:2% ; border-top:8px solid rgb(64, 63, 64); margin:3px;">
-        <p style="padding:1% ; margin:1px; text-align: center;"> If you are having any technical problems with our web - please attach a print screen </p>
-        <form style="border:  2px solid rgb(64, 63, 64); width: 40%; height: 90%; margin:10px auto;" action="formOutPut.html"method="get">
-            <div style="text-align: center;">
-                <label for="fname" >First Name:*</label><br>
+    <main style="height: 80%; padding:2%; margin:3px; background-color:rgb(11, 38, 66) ;"><!--didnt add border-looks better without it-->
+        <h2 style="padding:1% ; margin-left: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(247, 247, 247);"> If you are having any technical problems - please attach a print screen </h2><!--didnt add border-looks better without it-->
+        <img src="../static/contactUsImage.jpg" alt="contactUsImage" align="right" style="width: 37%;height: 45%;padding: 2px; margin: 70px;"><!--didnt add border-looks better without it-->
+        <form style="Padding:30px; border:  4px solid azure; margin:30px; width: 30%; height: 90%;" action="formOutPut.html"method="get">
+                <div style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(255, 255, 255);">
+                <b><label for="fname" >First Name:*</label><br></b>
                 <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,15}" required placeholder="Enter first name"><br><br>
-                <label for="lname">Last Name:*</label><br>
+                <b><label for="lname">Last Name:*</label><br></b>
                 <input type="text" id="lname" name="lname"  pattern="[A-Za-z]{1,15}" required placeholder="Enter last name"><br><br>
-                <label for="email">Email Address:*</label><br>
+                <b><label for="email">Email Address:*</label><br></b>
                 <input type="email" id="email" name="email" required placeholder="Enter email address"><br><br>
-                <label for="telephone">Phone Number:*</label><br>
+                <b><label for="telephone">Phone Number:*</label><br></b>
                 <input type="tel" id="telephone" name="telephone" pattern ="[0]{1}[5]{1}[0-9]{8}" required placeholder="Enter phone number" ><br><br>
-                <label for="description">Description:</label><br>
+                <b><label for="description">Description:</label><br></b>
                 <input type="text" id="description"name="description" style="height: 30px; "maxlength="150"><br><br> 
-                <label for="bug" style="margin-left: 40px;">technical problems</label>
+                <b><label for="bug" style="margin-left: 40px;">technical problems</label></b>
                 <input type="checkbox" id="bug"name="bug" style="margin-left: 10px;"  ><br>
-                <label for="addedFile" style="margin-left: 120px;"> Attach File</label>
+                <b><label for="addedFile" style="margin-left: 120px;"> Attach File</label></b>
                 <input type="file" id="addedFile"name="addedFile"><br><br>
                 <input type="submit" value="Submit">
-                <progress value ="20"max ="100"></progress>
+                <progress value ="0"max ="100"></progress>
+                </div>
     </form> 
     </main>
-    <footer style="height: 5%; padding:1% ; border-top:  2px solid rgb(64, 63, 64); margin:2px;">
-        <div style="margin-top: 8px;">
-                <a href="homePage.html">Click here to go back to the home page</a><br><br>
-                <a href="PrivacyPolicy.html">Privacy Policy</a><br><br>
-                <a href="https://he-il.facebook.com/">Our facebook page</a><br><br>
-                <a href="https://www.instagram.com/">Our instagram page</a>
+    <footer style="height: 5%; padding:1% ; border-top: 20px solid rgb(55, 78, 100); margin:2px;">
+        <div style=" font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <b><a style="color:black;" href="homePage.html">Back to the home page</a><br><br></b>
+                <b><a style="color: black;" href="PrivacyPolicy.html">Privacy policy</a><br><br></b>
+                <b><a style="color: black;" href="https://he-il.facebook.com/">Our facebook page</a><br><br></b>
+                <b><a  style="color:black;" href="https://www.instagram.com/">Our instagram page</a></b>
         </div>
     </footer>
 
