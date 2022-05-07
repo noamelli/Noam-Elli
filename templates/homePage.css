@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html{
+    height:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* header */
+.body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+.header{
+    height:100px;
+    width: 100%;
+    display: block;
+    grid-area: header;
+}
+.innerHeader{
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo{
+    height: 80%;
+    display: table;
+    float: left;
+}
+.logo h1{
+    color:rgb(0, 0, 0);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight:bold ;
+}
+.logo h1 span{
+    font-weight: 800;
+}
+.navigation{
+    float: right;
+    height: 100%;
+}
+.navigation a{
+    height: 100%;
+    float: left;
+    display: table;
+    padding: 20 px;
+    margin-left: 40px;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* main home page */
+.text{
+    height: 60px;
+    font-size: 240%;
+    font-weight: bold;
+    text-align: center; 
+    color:rgb(247, 247, 247);
+    background-color: #2d1d36;
+    vertical-align: middle;
+    grid-area: openingSentence;
+    animation: rainbow 4s ease-in-out 0.5s 5;
+}
+    @keyframes rainbow {
+        50% {color:rgb(220, 144, 220);}
+        100% {color:rgb(95, 180, 223);}
+
+        
+    }
+.main{
+    background-color:#5d3e6d;
+    display: block;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    grid-area: main;
+}
+
+.pageImage{
+    display: block;
+    margin-left: 10%;
+    margin-top:2%;
+    width: 40%;
+    height: 40%;
+    border-radius: 200%;
+}
+#cookingImg{
+margin-left: 38%;
+margin-top: 3%;
+border-radius: 20%;
+}
+#homePageNav{
+    background-color:#3e5a69;
+    display: block;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    color: white;
+    text-align: center; 
+    grid-area: bar;
+}
+#h3{
+    font-size: 130%;
+    padding:1% ;
+    margin-top: 2%; 
+    text-align: center; 
+    color:rgb(247, 247, 247);
+}
+#h2{
+    font-weight: bold;
+    font-size: 250%;
+    padding:1% ;
+    margin-top: 40px; 
+    text-align: center; 
+    color:rgb(247, 247, 247);
+}
+#navDisplay1{
+    display: flex; 
+    margin: 30px;
+    justify-content: center;
+}
+.link{
+    width: 130px;
+    height:130px;
+    padding:3px;
+    margin: 6px;
+    border-radius: 100%;
+}
+.spanStyle{
+    display:block;
+    font-size: 150%;
+}
+/* footer */
+.container{
+    max-width: 1050px;
+    margin-left: 30px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 20px 0;
+    grid-area: footer;
+}
+.coll{
+    margin-left: 7%;
+    width: 25%;
+    padding: 0 20px;
+}
+.coll h4{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 15px;
+}
+.coll h4::before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    background-color: black;
+    height: 2px;
+    width: 60px;
+}
+.coll ul li a{
+    font-size: 150%;
+    color: black;
+    font-weight: bold;
+}
+/* contactPage */
+#contactPageImg{
+    width: 23%;
+    height: 23%;
+    padding: 2px;
+    margin: 10%;
+}
+#form{
+    background-color:#3e5a69;
+    display: block;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    color: white;
+    text-align: center; 
+    grid-area: form;
+}
+#formDiv{
+    background-color:#3e5a69;
+    text-align: center; 
+    margin-top: 30px;
+    padding: 5%;
+ 
+
+}
+#description{
+    height: 30px;
+}
+#bug{
+    margin-top: 4%;
+}
+#addFile1{
+margin-top: 4%;
+margin-left: 4%;}
+#addFile2{
+    margin-top: 4%;}
+    /* grid */
+.gridContainer{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.5fr 0.2fr 1.8fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "openingSentence openingSentence openingSentence"
+    "bar main main"
+    "bar main main"
+    "bar main main"
+    "bar footer footer";
+}
+.gridContainer2{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.5fr 1.8fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "form main main"
+    "form main main"
+    "form main main"
+    "form footer footer";
+}

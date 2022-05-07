@@ -4,45 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePage.css">
     <title>Document</title>
 </head>
-<body >
-    <header style="height:15% ;padding:1px; border-bottom: 20px solid rgb(55, 78, 100); margin: 1px;">
-        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center ;margin-top:30px;color: rgb(27, 37, 37);" >Let Us Help You</h1><!--didnt add border-looks better without it-->
-    </header>
-    <main style="height: 80%; padding:2%; margin:3px; background-color:rgb(11, 38, 66) ;"><!--didnt add border-looks better without it-->
-        <h2 style="padding:1% ; margin-left: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(247, 247, 247);"> If you are having any technical problems - please attach a print screen </h2><!--didnt add border-looks better without it-->
-
-        <img src="../static/contactUsImage.jpg" alt="contactUsImage" align="right" style="width: 37%;height: 45%;padding: 2px; margin: 70px;"><!--didnt add border-looks better without it-->
-        <form style="Padding:30px; border: 4px solid azure; margin:30px; width: 30%; height: 90%;" action="formOutPut.html"method="get">
-                <div style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(255, 255, 255);">
-                <b><label for="fname" >First Name:*</label><br></b>
-                <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,15}" required placeholder="Enter first name"><br><br>
-                <b><label for="lname">Last Name:*</label><br></b>
-                <input type="text" id="lname" name="lname"  pattern="[A-Za-z]{1,15}" required placeholder="Enter last name"><br><br>
-                <b><label for="email">Email Address:*</label><br></b>
-                <input type="email" id="email" name="email" required placeholder="Enter email address"><br><br>
-                <b><label for="telephone">Phone Number:*</label><br></b>
-                <input type="tel" id="telephone" name="telephone" pattern ="[0]{1}[5]{1}[0-9]{8}" required placeholder="Enter phone number" ><br><br>
-                <b><label for="description">Description:</label><br></b>
-                <input type="text" id="description"name="description" style="height: 30px; "maxlength="150"><br><br> 
-                <b><label for="bug" style="margin-left: 40px;">technical problems</label></b>
-                <input type="checkbox" id="bug"name="bug" style="margin-left: 10px;"  ><br>
-                <b><label for="addedFile" style="margin-left: 120px;"> Attach File</label></b>
-                <input type="file" id="addedFile"name="addedFile"><br><br>
-                <input type="submit" value="Submit">
-                <progress value ="0"max ="100"></progress>
-                </div>
-    </form> 
-    </main>
-    <footer style="height: 5%; padding:1% ; border-top: 20px solid rgb(55, 78, 100); margin:2px;">
-        <div style=" font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                <b><a style="color:black;" href="homePage.html">Back to the home page</a><br><br></b>
-                <b><a style="color: black;" href="PrivacyPolicy.html">Privacy policy</a><br><br></b>
-                <b><a style="color: black;" href="https://he-il.facebook.com/">Our facebook page</a><br><br></b>
-                <b><a  style="color:black;" href="https://www.instagram.com/">Our instagram page</a></b>
+<div class="gridContainer2">
+    <body class="body">
+     <div class="header">
+        <div class ="innerHeader">
+            <div class="logo">
+                <h1 >Chef<span>It</span></h1>
+                <img class="pageImage" src="../static/recipesLogo.jpg" alt="food logo">
+            </div>
+            <ul class="navigation">
+                <a href="../templates/signIn.html"><li> Sign In </li></a>
+                <a href="../templates/register.html"><li> Register </li></a>
+                <a href="../templates/support.html"><li> Support </li></a>
+            </ul>
         </div>
-    </footer>
+    </div>
+     <main class="main">
+        <div class="h3" >Let Us Help You</div>
+        <img id="contactPageImg" src="../static/contactUsImage.jpg"  alt="contactUsImage">
+    </main> 
+    <form id="form" action="formOutPut.html"method="get">
+        <div id="formDiv">
+        <label for="fname" >First Name:*</label><br>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,15}" required placeholder="Enter first name"><br><br>
+        <label for="lname">Last Name:*</label><br>
+        <input type="text" id="lname" name="lname"  pattern="[A-Za-z]{1,15}" required placeholder="Enter last name"><br><br>
+        <label for="email">Email Address:*</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter email address"><br><br>
+        <label for="telephone">Phone Number:*</label><br>
+        <input type="tel" id="telephone" name="telephone" pattern ="[0]{1}[5]{1}[0-9]{8}" required placeholder="Enter phone number" ><br><br>
+        <div id="description">
+            <label for="description">Description:</label><br>
+            <input type="text" id="description"name="description" maxlength="150"><br><br> 
+        </div>
+         <div id="bug">
+            <label for="bug">technical problems</label>
+            <input type="checkbox" id="bug"name="bug"  ><br>
+         </div>
+            <label id="addFile1" for="addedFile" > Attach File</label>
+            <input id="addFile2"type="file" id="addedFile"name="addedFile"><br><br>
+            <input type="submit" value="Submit">
+        </div>
+</form> 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="coll">
+                <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://he-il.facebook.com/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+            </div>
+            <div class="coll">
+                <h4>Support</h4>
+                    <ul>
+                        <li><a href="../templates/contactPage.html">Contact Us</a></li>
+                        <li><a href="../templates/support.html">Help</a></li>
+                    </ul>
+            </div>
+            <div class="coll">
+                <h4>Company</h4>
+                    <ul>
+                        <li><a href="../templates/PrivacyPolicy.html">Privacy Policy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
-</body>
+    </body>
+</div>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
