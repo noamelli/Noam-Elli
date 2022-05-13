@@ -1,27 +1,28 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="chefIt_css.css">
     <title>Document</title>
+    <script src="chefIt_JS.js"></script>
 </head>
 <div class="gridContainer2">
     <body class="body">
-     <div class="header">
-        <div class ="innerHeader">
-            <div class="logo">
-                <h1 >Chef<span>It</span></h1>
-                <img class="pageImage" src="../static/recipesLogo.jpg" alt="food logo">
+        <div class="header">
+            <div class ="innerHeader">
+                <div class="logo">
+                    <h1 >Chef<span>It</span></h1>
+                    <img class="pageImage" src="../static/recipesLogo.jpg" alt="food logo">
+                </div>
+                <ul class="navigation">
+                    <a href="../templates/signIn.html"><li> Sign In </li></a>
+                    <a href="../templates/register.html"><li> Register </li></a>
+                    <a href="../templates/homePage.html"><li> Home Page </li></a>
+                </ul>
             </div>
-            <ul class="navigation">
-                <a href="../templates/signIn.html"><li> Sign In </li></a>
-                <a href="../templates/register.html"><li> Register </li></a>
-                <a href="../templates/support.html"><li> Support </li></a>
-            </ul>
-        </div>
-    </div>
+        </div>  
      <main id="main2">
         <div id="letUsHelp" >Let Us Help You</div>
     </main> 
@@ -42,50 +43,39 @@
             </div>
             <label class="labelElement" for="bug">technical problems</label>
             <input id="checkbox" type="checkbox" id="bug"name="bug"  ><br><br>
-                <label id="addFile1" for="addedFile"> Attach File</label><br>
-                <input id="addFile2" type="file" id="addedFile"name="addedFile" ><br>
-    
+            <label id="addFile1" for="addedFile"> Attach File</label><br>
+            <input id="addFile2" type="file" id="addedFile"name="addedFile" ><br>
             <input id="submit" type="submit" value="Submit">
         </div>
     </form> 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="coll">
-                <h4>Follow Us</h4>
-                    <ul>
-                        <li><a href="https://he-il.facebook.com/">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/">Instagram</a></li>
-                    </ul>
-            </div>
-            <div class="coll">
-                <h4>Support</h4>
-                    <ul>
-                        <li><a href="../templates/homePage.html">Home Page</a></li>
-                        <li><a href="../templates/support.html">Help</a></li>
-                    </ul>
-            </div>
-            <div class="coll">
-                <h4>Company</h4>
-                    <ul>
-                        <li><a href="../templates/PrivacyPolicy.html">Privacy Policy</a></li>
-                    </ul>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="coll">
+                    <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="https://he-il.facebook.com/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        </ul>
+                </div>
+                <div class="coll">
+                    <h4>Support</h4>
+                        <ul>
+                            <li><a href="../templates/contactPage.html">Contact Us</a></li>
+                            <li><a href="../templates/support.html">Help</a></li>
+                        </ul>
+                </div>
+                <div class="coll">
+                    <h4>Company</h4>
+                        <ul>
+                            <li><a href="../templates/PrivacyPolicy.html">Privacy Policy</a></li>
+                        </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
     </body>
 </div>
 
 </html>
-
-
-
-
-
-
-
-
-
-
+ 

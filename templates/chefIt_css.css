@@ -9,27 +9,24 @@ html{
     text-decoration: none;
     box-sizing: border-box;
 }
-/* header */
 .body{
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
+    height: 126vh%;
 }
 .header{
-    height:100px;
+    position: sticky;
+    top:0;
+    height:11vh;
     width: 100%;
-    display: block;
     grid-area: header;
-}
-.innerHeader{
-    width: 95%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
+    background-color: rgb(247, 236, 222);
 }
 .logo{
     height: 80%;
     display: table;
     float: left;
+    margin-left:1% ;
+    font-size: 3vh;
 }
 .logo h1{
     color:rgb(0, 0, 0);
@@ -37,74 +34,76 @@ html{
     display: table-cell;
     vertical-align: middle;
     font-family: monospace;
-    font-size: 50px;
     font-weight:bold ;
-}
-.logo h1 span{
-    font-weight: 800;
-}
-.navigation{
-    float: right;
-    height: 100%;
-}
-.navigation a{
-    height: 100%;
-    float: left;
-    display: table;
-    padding: 20 px;
-    margin-left: 40px;
-}
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color:rgb(0, 0, 0);
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* main home page */
-.text{
-    height: 60px;
-    font-size: 240%;
-    font-weight: bold;
-    text-align: center; 
-    color:rgb(247, 247, 247);
-    background-color: #08040a;
-    vertical-align: middle;
-    grid-area: openingSentence;
-    animation: rainbow 4s ease-in-out 0.5s 5;
-}
-    @keyframes rainbow {
-        50% {color:rgb(235, 235, 235);}
-        100% {color:rgb(11, 47, 66);}
-
-        
-    }
-#main1{
-    background-image: url(../static/background2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    grid-area: main;
 }
 .pageImage{
     display: block;
     margin-left: 10%;
     margin-top:2%;
-    width: 40%;
-    height: 40%;
+    width: 33%;
+    height: 33%;
     border-radius: 200%;
 }
+.navigation{
+    margin-right: 33%;
+    height: 100%;
+}
+.navigation a{
+    height: 53%;
+    float: right;
+    display: inline;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.navigation a li{
+    height: 100%;
+    color:rgb(0, 0, 0);
+    font-size: 180%;
+    font-weight: bold;
+}
+/* home page */
+.gridContainer{
+    display: grid;
+    height: 126vh;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.5fr 1.8fr 1.8fr 1.2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "bar main main"
+    "bar main main"
+    "bar main main"
+    "footer footer footer";
+}
+.text{
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center; 
+    color:rgb(45, 41, 74);
+    vertical-align: middle;
+    grid-area: openingSentence;
+    animation: rainbow 10s ease-in-out 0.5s 5;
+}
+    @keyframes rainbow {
+        50% {color:#46748f;}
+        100% {color:rgb(6, 26, 37);}
+    }
+#main1{
+    background-image: url(../static/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    grid-area: main;
+}
 #homePageNav{
-    background-color:#253c47;
+    background-color:#46748f;
     display: block;
     margin-top: 0 auto;
     margin-bottom: 0 auto;
-    color: whitesmoke;
+    color: black;
     text-align: center; 
     grid-area: bar;
+    height: 100vh;
 }
 #h3{
     font-size: 140%;
@@ -113,104 +112,117 @@ html{
     text-align :left; 
     color:rgb(0, 0, 0);
     font-weight: inherit;
-    
 }
 #h2{
     font-weight: bold;
     font-size: 270%;
     padding:1% ;
-    margin-top: 80px; 
+    margin-top: 20%; 
     text-align: center; 
-    color:whitesmoke;
+    color: black;
 
 }
 #navDisplay1{
     display: flex; 
-    margin: 50px;
+    margin: 7%;
     justify-content: center;
 }
 .link{
-    width: 130px;
-    height:130px;
-    padding:3px;
-    margin: 8px;
+    width: 10vw;
+    height:15vh;
+    margin: 1%;
+    padding: 8%;
     border-radius: 100%;
 }
 .spanStyle{
     display:block;
-    font-size: 150%;
+    font-size: 130%;
 }
 /* footer */
 .container{
-    max-width: 1050px;
-    margin-left: 30px;
+    max-width: 50%;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 .footer{
-    padding: 20px 0;
+    padding: 1%;
     grid-area: footer;
+    background-color: rgb(247, 236, 222);
+    height: 15vh;
 }
 .coll{
     margin-left: 7%;
     width: 25%;
-    padding: 0 20px;
 }
 .coll h4{
-    font-size: 30px;
+    font-size: 160%;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
     text-transform: capitalize;
     font-weight: bold;
     position: relative;
-    margin-bottom: 15px;
+
 }
 .coll h4::before{
     content: '';
     position: absolute;
-    bottom: -7px;
+    bottom: -15%;
     background-color: black;
-    height: 2px;
-    width: 60px;
+    height:8%;
+    width: 30%;
+
 }
 .coll ul li a{
-    font-size: 150%;
-    color: black;
+    font-size: 140%;
+    color: rgb(18, 18, 18);
     font-weight: bold;
 }
 /* contactPage */
+    .gridContainer2{
+        display: grid;
+        height: 126vh;
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows:0.5fr 1.8fr 1.8fr 1.2fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "form main main"
+        "form main main"
+        "form main main"
+        "footer footer footer";
+    }
 #main2{
     background-image: url(../static/backgroundImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 70vw;
     height: 100vh;
     grid-area: main;
 }
 #letUsHelp{
-    margin-top: 40%;
-    margin-left: 30px;
+    margin-top: 60%;
+    margin-left: 10%;
     font-size: 400%;
     color: #1d323d;
     font-weight:inherit;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #form{
-    background-color:#253c47;
+    background-color:#46748f;
     display: block;
     margin-top: 0 auto;
     margin-bottom: 0 auto;
     text-align: center; 
     grid-area: form;
+    height: 100vh;
 }
 #formText{
     font-size: 110%;
     padding:1% ;
     margin-top: 10%; 
     text-align: center; 
-    color: whitesmoke;
+    color: black;
 }
 #formDiv{
     text-align: center; 
@@ -218,59 +230,36 @@ html{
 }
 .labelElement{
     font-size: 130%;
-    color:rgb(233, 223, 223);
+    color: black;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 20%;
 }
 .inputElement{
-    margin-top: 5px;
-    height: 25px;
+    margin-top: 3%;
+    height: 3vh;
 }
 #description{
-    height: 60px;
-    margin-bottom:50px ;
+    height: 5vh;
+    margin-bottom:15% ;
 }
 #checkbox{
-    margin-left: 5px;
+    margin-left: 5%;
 
 }
 #addFile1{
     font-size: 130%;
-    color:rgb(233, 223, 223);
+    color: black;
     font-weight: bold;
-    margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 1%;
 }
 #addFile2{
-    margin-left: 100px;
-    margin-top: 5px;
+    margin-left: 22%;
+    margin-top: 7%;
+    color: black;
 }
 #submit{
-    margin-top: 30px;
-    height: 30px;
-    width: 90px;
+    margin-top: 7%;
+    height: 30%;
+    width: 25%;
 }
-    /* grid */
-.gridContainer{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows:0.5fr 0.2fr 1.8fr 1.8fr 1.2fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "openingSentence openingSentence openingSentence"
-    "bar main main"
-    "bar main main"
-    "bar main main"
-    "bar footer footer";
-}
-.gridContainer2{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows:0.5fr 1.8fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "form main main"
-    "form main main"
-    "form main main"
-    "form footer footer";
-}
+
