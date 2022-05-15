@@ -11,7 +11,7 @@ html{
 }
 .body{
     font-family: 'Montserrat', sans-serif;
-    height: 126vh%;
+    height: 126vh;
 }
 .header{
     position: sticky;
@@ -214,7 +214,7 @@ html{
     margin-top: 0 auto;
     margin-bottom: 0 auto;
     text-align: center; 
-    grid-area: form;
+    grid-area: img;
     height: 100vh;
 }
 #formText{
