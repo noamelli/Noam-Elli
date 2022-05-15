@@ -85,19 +85,19 @@
     font-weight:bold;
 }
 #aboutUs h3{
-	margin-top: 2%;
+	margin-top: 1%;
 	font-size: 150%;
     text-align :left; 
     color:rgb(0, 0, 0);
     font-weight: bold;
-	margin-left: 3%;}
+	margin-left: 1%;}
 #text{
 	margin-top: 2%;
-	font-size: 120%;
+	font-size: 110%;
     text-align :left; 
     color:rgb(0, 0, 0);
     font-weight: inherit;
-	margin-left: 3%;
+	margin-left: 1%;
 }
 #mainSentence{
     font-size: 250%;
