@@ -11,20 +11,23 @@
 </head>
 
 <body>
-	<div class="gridContainer">
-		<header id="header">
-			<div class="logo">
-				<h1 >Chef<span>It</span></h1>
-				<img class="pageImage" src="../static/recipesLogo.jpg" alt="food logo">
-			</div>
-			<nav id="menu" >
-				<a class="SigningHeader" href="../templates/signUp.html">New Here ? Sign Up </a> &nbsp &nbsp
-				<a class="SigningHeader" href="../templates/signIn.html"> Sign In</a>
-				<a class="options" href="../templates/homePage.html">Home Page</a> &nbsp &nbsp
-				<a class="options" href="../templates/homePage.html"> About Us</a> &nbsp &nbsp
-				<a class="options" href="../templates/contactUs.html"> Contact Us</a> &nbsp &nbsp
-			</nav>
-		</header>
+	<div id="gridContainerHomePage">
+			<header>
+				<div class="logo">
+					<h1 >Chef<span>It</span></h1>
+					<img class="pageImage" src="../static/recipesLogo.jpg" alt="food logo">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="../templates/homePage.html">Home Page</a></li>
+						<li><a href="../templates/signIn.html"> Sign In</a></li>
+						<li><a href="../templates/signUp.html"> Sign Up</a></li>
+						<li><a href="../templates/contactUs.html"> Contact Us </a></li>
+					</ul>
+				</nav>
+			</header>
+	
+	
 		<main id="aboutUs">
 			<h1 id="mainSentence">Welcome To Your New Cooking Experience</h1>
 			<h3>About Us </h3>
@@ -33,36 +36,37 @@
                 <p> Some of them were wrriten by the greatest chefs. </p><br>
                 <p> We invite you to sign in - so you can get updates in your mail.</p><br>
 			</div>
+			<nav id="homePageNav"> 
+				<p > Please choose the category you want</p>
+				<div class="navDisplay1">
+						<div class="option">
+							<a href="../templates/italianRecipesPage.html"><img src="../static/pizzaImage.jpg" alt="Italian page link" class="link"></a>
+							<span class="spanStyle">Italian</span>
+						</div>
+						<div class="option">
+							<a href="../templates/meetRecipesPage.html"><img src="../static/meetImage.jpg" alt="meet page link" class="link"></a>
+							<span class="spanStyle">Meet</span>
+						</div>
+						<div class="option">
+							<a href="../templates/vegetarianRecipesPage.html"><img src="../static/vegetarianFoodImage.jpg" alt="vegetarian page link" class="link"></a>
+							<span class="spanStyle">vegetarian</span>
+						</div>
+					</div>
+					<div class="navDisplay1">
+						<div class="option">
+							<a href="../templates/dessertRecipesPage.html"><img src="../static/dessertImage.jpg" alt="dessert page link" class="link"></a>
+							<span class="spanStyle">Desserts</span>
+						</div>
+	
+						<div class="option">
+							<a href="../templates/breakfastRecipesPage.html"><img src="../static/breakfastImage.jpg" alt="breakfast page link" class="link"></a>
+							<span class="spanStyle">Breakfast</span>
+						</div>
+					</div>
+			</nav>		
 		</main>
 
-        <nav id="homePageNav"> 
-            <p id="h2"> Please choose the category you want</p>
-            <div id="navDisplay1">
-                    <div>
-                        <a href="../templates/italianRecipesPage.html"><img src="../static/pizzaImage.jpg" alt="Italian page link" class="link"></a>
-                        <span class="spanStyle">Italian</span>
-                    </div>
-                    <div >
-                        <a href="../templates/meetRecipesPage.html"><img src="../static/meetImage.jpg" alt="meet page link" class="link"></a>
-                        <span class="spanStyle">Meet</span>
-                    </div>
-                    <div>
-                        <a href="../templates/vegetarianRecipesPage.html"><img src="../static/vegetarianFoodImage.jpg" alt="vegetarian page link" class="link"></a>
-                        <span class="spanStyle">vegetarian</span>
-                    </div>
-                </div>
-                <div id="navDisplay1">
-                    <div>
-                        <a href="../templates/dessertRecipesPage.html"><img src="../static/dessertImage.jpg" alt="dessert page link" class="link"></a>
-                        <span class="spanStyle">Desserts</span>
-                    </div>
-
-                    <div>
-                        <a href="../templates/breakfastRecipesPage.html"><img src="../static/breakfastImage.jpg" alt="breakfast page link" class="link"></a>
-                        <span class="spanStyle">Breakfast</span>
-                    </div>
-                </div>
-		</nav>		
+       
 		<footer class="footer">
 			<div class="containerfooter">
 				<div class="row">
